@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mühendislik Fakültesi - Giriş</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>Ders Programı Sistemi</h1>
+        <h2>Sistem Yetkilisi Girişi</h2>
+
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Kullanıcı Adı (Rol)</label>
+                <input type="text" id="username" name="username" required value="admin">
+            </div>
+
+            <div class="input-group">
+                <label for="password">Şifre</label>
+                <input type="password" id="password" name="password" required value="123456">
+            </div>
+
+            <p id="error-message" class="error-message"></p>
+
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+
+    <script src="assets/js/login.js"></script>
+</body>
+</html>

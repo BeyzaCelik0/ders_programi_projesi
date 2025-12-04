@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Sanal ortam
+venv/
+.env
+
+# Veritabanı dosyaları (Eğer varsa)
+*.db
+
+# Editör dosyaları
+.idea/

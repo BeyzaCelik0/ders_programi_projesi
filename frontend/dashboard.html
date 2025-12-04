@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Ders Programı Yönetimi</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <header>
+            <h1 style="border-bottom: 2px solid #eee; padding-bottom: 10px;">
+                Fakülte Ders Programı Yönetim Sistemi
+            </h1>
+        </header>
+
+        <div class="summary-card">
+            <h2>Hoş Geldiniz, <span id="welcome-user"></span>!</h2>
+            <p><strong>Rol:</strong> <span id="user-role"></span></p>
+            <p><strong>Çalışılan Bölüm/Kapsam:</strong> <span id="department-name"></span></p>
+            <p id="next-step-message" style="font-weight: bold; color: #cc0000;"></p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3><span id="total-courses-count">...</span></h3>
+                <p>Toplam Açık Ders Sayısı</p>
+            </div>
+            <div class="stat-item">
+                <h3><span id="unplaced-courses-count">...</span></h3>
+                <p>Yerleştirilmemiş Ders (Çakışmalı)</p>
+            </div>
+            <div class="stat-item">
+                <h3><a href="#" style="text-decoration: none; color: inherit;">Program Editörü</a></h3>
+                <p>Haftalık Programı Düzenle</p>
+            </div>
+        </div>
+
+        <footer style="margin-top: 50px; text-align: right; font-size: 0.8em; color: #777;">
+            <p>&copy; Mühendislik Fakültesi Program Sistemi | <a href="#" onclick="logout()">Çıkış Yap</a></p>
+        </footer>
+    </div>
+
+    <script>
+        function logout() {
+            localStorage.removeItem('access_token');
+            window.location.href = 'index.html';
+        }
+    </script>
+    <script src="assets/js/dashboard.js"></script>
+</body>
+</html>
