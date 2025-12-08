@@ -6,7 +6,7 @@ __pycache__/
 venv/
 .env
 
-# Veritabanı dosyaları (Eğer varsa)
+# Veritabanı dosyaları 
 *.db
 
 # Editör dosyaları
