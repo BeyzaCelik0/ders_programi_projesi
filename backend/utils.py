@@ -5,7 +5,6 @@ from jose import JWTError
 from typing import Optional
 
 # JWT ayarları
-SECRET_KEY = "Beyza12345.0"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30 # Token'ın geçerlilik süresi.
 
