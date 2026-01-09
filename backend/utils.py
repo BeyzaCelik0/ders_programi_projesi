@@ -41,12 +41,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 def get_user_from_token(token: str):
     """Verilen token'ı çözer ve içindeki kullanıcı verisini döndürür."""
 
-    try:
-        payload = jwt.decode(
-            token,
-            "Beyza12345.0",
-            algorithms=["HS256"]
-        )
+   
 
         username: str = payload.get("sub")
 
