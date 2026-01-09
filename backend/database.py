@@ -2,8 +2,6 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy.ext.declarative import declarative_base
 
-# PostgreSQL veritabanının bağlantı dizesi
-DATABASE_URL = "postgresql://postgres:Beyza12345.@localhost:5432/ders_programi_db"
 
 # SQLAlchemy motorunu oluşturma
 engine = create_engine(
